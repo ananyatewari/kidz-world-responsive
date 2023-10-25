@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin");
+
+*{
+    font-family: Libre Franklin;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: white;
+    height: 55px;
+}
+
+#header-img1{
+    float: left;
+    margin-left: 60px;
+    height: 50px;
+}
+
+#header-text-img{
+    padding-top: 8px;
+    float: right;
+    margin-right: 60px;
+}
+
+#header-text-img > img{
+    height: 37px;
+}
+
+#header-text{
+    vertical-align: middle;
+    position: relative;
+    bottom: 14px;
+    font-size: small;
+    font-weight: bolder;
+}
+
+body section#background{
+    background-image: url("assets/kw-background.png");
+    background-size: 100% 100%;
+    /* height: 500px; */
+}
+
+div#background-text{
+    padding: 50px;
+    color: white;
+    font-family: Utopia;
+    font-size: 70px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+span#newandnow{
+    font-family: Libre Franklin;
+    font-size: 20px;
+    font-weight: 900;
+    position: relative;
+    bottom: 15px;
+}
+
+#title1, #title2, #title3{
+    font-family: Utopia;
+    padding-top: 50px;
+    padding-left: 23px;
+    font-size: 26px;
+    font-weight: 900;
+    position: relative;
+    top: 50px;
+    margin-left: 50px;
+}
+
+#title2{
+    top: 125px;
+    margin-left: 50px;
+}
+
+#title3{
+    top: 200px;
+    margin-left: 50px;
+}
+
+section#books, section#games, section#gifts{
+    display: flex;
+    position: relative;
+    top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+section#games{
+    top: 130px;
+}
+
+section#gifts{
+    top: 200px;
+}
+
+section#books div img.book{
+    height: 270px;
+    padding: 20px;
+}
+
+section#games div img.game{
+    height: 270px;
+    padding: 25px;
+    /* overflow: scroll; */
+}
+
+section#gifts div img.gift{
+    height: 270px;
+    padding: 25px;
+    /* overflow: scroll; */
+}
+
+.main-name, .light-grey, .price{
+    padding: 24px;
+}
+
+.main-name{
+    position: relative;
+    bottom: 15px;
+    font-weight: 900;
+    text-decoration: solid;
+    font-size: 20px;
+}
+
+section#games .main-name{
+    margin-left: 6px;
+}
+
+.light-grey{
+    color: #7b7676;
+    font-size: small;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.add-cart{
+    color: white;
+    background-color: #6196FF;
+    padding: 10px;
+    position: relative;
+    left: 47px;
+    bottom: 4px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+section#games span.add-cart{
+    left: 140px;
+}
+
+section#gifts span.add-cart{
+    left: 142px;
+}
+
+.cart-icon-white{
+    position: relative;
+    top: 8px;
+    width: 23px;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 470px;
+    height: 350px;
+}
+
+div#img-text, div#footer-text{
+    display: inline-block;
+}
+
+div#img-text{
+    margin-left: 70px;
+}
+
+div#img-text span{
+    font-family: Utopia;
+    margin-left: 55px;
+    font-size: x-large;
+    position: relative;
+    top: 8px;
+}
+
+div#footer-text{
+    position: relative;
+    left: 800px;
+    bottom: 100px;
+    text-align: right;
+}
+
+div#footer-text span{
+    position: relative;
+    bottom: 10px;
+}
+
+footer div#img-text div#footer-img img{
+    border-radius: 50%;
+    height: 300px;
+    width: 330px;
+    position: relative;
+    top: 20px;
+}
+
+
+@media (max-width: 500px){
+    section#books, section#games, section#gifts{
+        display: block;
+    }
+    #header-img1{
+        margin-left: 20px;
+    }
+    #header-text-img{
+        margin-right: 20px;
+    }
+    section#background{
+        background-repeat: no-repeat;
+        background-position-x: -10px;
+        background-position-y: -10px;
+        background-attachment: scroll;
+    }
+
+    section#books{
+        margin-left: 80px;
+    }
+    section#books div img.book{
+        height: 400px;
+        padding: 30px;
+    }
+    section#games div img.game, section#gifts div img.gift{
+        height: 300px;
+    }
+    .add-cart{
+        left: 150px;
+    }
+    
+    div#img-text, div#footer-text{
+        display: block;
+    }
+
+    div#img-text{
+        margin-left: 1px;
+    }
+    div#img-text span{
+        margin-left: 20px;
+    }
+
+    footer div#img-text div#footer-img img{
+        border-radius: 50%;
+        height: 200px;
+        width: 230px;
+        position: relative;
+        top: 20px;
+    }
+    div#footer-text{
+        color: white;
+        bottom: 100px;
+        left: 1px;
+        font-size: 15px;
+        margin-right: 3px;
+    }
+    div#footer-text span{
+        font-size: 20px;
+    }
+}
