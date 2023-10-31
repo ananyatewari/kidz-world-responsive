@@ -37,7 +37,9 @@ header{
 
 body section#background{
     background-image: url("assets/kw-background.png");
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: right;
+
     /* height: 500px; */
 }
 
@@ -81,10 +83,13 @@ span#newandnow{
 
 section#books, section#games, section#gifts{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
     top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 section#games{
@@ -208,8 +213,19 @@ footer div#img-text div#footer-img img{
     top: 20px;
 }
 
+@media only screen and (max-width: 1200px){
+    section#background{
 
-@media (max-width: 500px){
+    }
+}
+
+/* @media only screen and (max-width: 600px){
+    section#background{
+        width: auto;
+    }
+} */
+
+@media only screen and (max-width: 500px){
     section#books, section#games, section#gifts{
         display: block;
     }
@@ -220,24 +236,32 @@ footer div#img-text div#footer-img img{
         margin-right: 20px;
     }
     section#background{
-        background-repeat: no-repeat;
-        background-position-x: -10px;
-        background-position-y: -10px;
-        background-attachment: scroll;
+
+        height: 300px;
     }
 
-    section#books{
-        margin-left: 80px;
+    div#background-text{
+        font-size: 45px;
+        margin-left: -35px;
     }
+
     section#books div img.book{
         height: 400px;
         padding: 30px;
     }
+
     section#games div img.game, section#gifts div img.gift{
         height: 300px;
+        padding: 30px;
     }
+
+    section#books, section#games, section#gifts, #title1, #title2, #title3{
+        margin-left: 40px;
+    }
+
     .add-cart{
-        left: 150px;
+        position: relative;
+        right: 10px;
     }
     
     div#img-text, div#footer-text{
