@@ -21,6 +21,11 @@ header{
     padding-top: 8px;
     float: right;
     margin-right: 60px;
+    cursor: grab;
+}
+
+#header-text-img:hover{
+    background-color: #7b767642;
 }
 
 #header-text-img > img{
@@ -35,12 +40,14 @@ header{
     font-weight: bolder;
 }
 
+#header-text:hover{
+    color: #6196FF;
+}
+
 body section#background{
     background-image: url("assets/kw-background.png");
     background-size: cover;
     background-position: right;
-
-    /* height: 500px; */
 }
 
 div#background-text{
@@ -68,17 +75,17 @@ span#newandnow{
     font-weight: 900;
     position: relative;
     top: 50px;
-    margin-left: 50px;
+    margin-left: 1px;
 }
 
 #title2{
     top: 125px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 #title3{
     top: 200px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 section#books, section#games, section#gifts{
@@ -153,6 +160,11 @@ section#games .main-name{
     border-radius: 10px;
     font-size: 12px;
     font-weight: 900;
+    cursor: pointer;
+}
+
+.add-cart:hover{
+    background-color: #000000;
 }
 
 section#games span.add-cart{
@@ -207,15 +219,93 @@ div#footer-text span{
 
 footer div#img-text div#footer-img img{
     border-radius: 50%;
-    height: 300px;
-    width: 330px;
+    height: 200px;
+    width: 200px;
     position: relative;
     top: 20px;
+    left: 40px;
+}
+
+#blur{
+    position: fixed;
+    top: 50px;
+    bottom: 50px;
+    right: 50px;
+    left: 50px;
+    background-color: #000000a7;
+    color: white;
+    overflow: scroll;
+    scrollbar-color: #000000a7;
+    
+}
+
+#cross{
+    z-index: 10;
+    position: fixed;
+    top: 53px;
+    right: 70px;
+    font-size: 40px;
+    padding: 4px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+#cross:hover{
+    background-color: rgb(241, 135, 135);
+    color: white;
+}
+
+div#popup div#blur img{
+    margin: 10px;
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+#cart-container{
+    margin: 20px;
+    background-color: #ffffff48;
+    display: block;
+    flex-direction: row;
+}
+
+#cart-container span{
+    margin: 10px;
+    font-size: 20px;
+}
+
+#final-price{
+    background-color: #6196FF;
+    margin: 300px;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 30px;
+    font-size: 30px;
+    position: absolute;
+    font-weight: 900;    
+}
+
+#order-now{
+    cursor: progress;
+    margin: 300px;
+    padding: 30px;
+    font-size: 30px;
+    position: absolute;
+    border-radius: 30px;
+    margin-top: 50px;
+    background-color: green;
+    margin-left: 800px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+#order-now:hover{
+    background-color: rgb(3, 69, 3);
 }
 
 @media only screen and (max-width: 1200px){
     section#background{
-
+        background-size: cover;
     }
 }
 

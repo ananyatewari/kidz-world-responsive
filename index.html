@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIDZ WORLD</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -12,10 +12,11 @@
     <img src="assets/kw-logo.png" alt="logo" id="header-img1">
     <div id="header-text-img">
     <img src="assets/cart-icon.png" alt="cart1" id="header-img2">
-    <span id="header-text">Cart items(0)</span>
+    <span id="header-text">Cart items(<span id="cart"></span>)</span>
     </div>
 </header>
 <body>
+
 <section id="background">
     <div id="background-text">
         Shop. <br>
@@ -32,7 +33,7 @@
         <span class="main-name">This was our pact</span> <br>
         <span class="light-grey">Ryan Andrews </span> <br>
         <span class="price">$7.49</span> 
-        <span class="add-cart">
+        <span class="add-cart">     
             Add
             <img src="assets/cart-icon-white.png" alt="" class="cart-icon-white">
         </span>
@@ -180,15 +181,24 @@
 <footer>
     <div id="img-text">
     <span>Brought to you by</span>
-    <div id="footer-img"><img src="assets/krishti.png" alt=""></div>
+    <div id="footer-img"><img src="https://cdn3d.iconscout.com/3d/premium/thumb/cat-8449794-6648582.png?f=webp" alt=""></div>
     </div>
     <div id="footer-text">
-        <span><strong style="font-size: 25px;">Krishti</strong></span> <br>
+        <span><strong style="font-size: 25px;">Ananya</strong></span> <br>
         Made with <i class="fa fa-heart" style="font-size:18px;color:red"></i> by Ananya <br>
-        Talk to me at kristi@gmail.com
+        Talk to me at ananyatewari0205@gmail.com 
     </div>
 </footer>
 
+<div id="popup" style="display: none;">
+    <div id="cart-list"></div>
+    <span id="cross">
+    &#10060;
+    </span>
+    <div id="blur"></div>
+</div>
+
+<script src="./script.js"></script>
 
 </body>
 </html>
