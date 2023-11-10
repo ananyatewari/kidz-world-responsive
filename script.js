@@ -114,7 +114,7 @@ let itemCount = 0;
 //this is to update the cart
 for (let i = 0; i < items.length; i++){
     addCartButton[i].addEventListener ("click", () => {
-        console.log(addCartButton)
+        // console.log(addCartButton)
         items[i].quantity++;
         cartCount.innerHTML = ++count;
         totalQuantity++;
@@ -129,7 +129,7 @@ for (let i = 0; i < items.length; i++){
 function updatePrice(){
     userChoice.forEach((el) =>{
         totalPrice += el.quantity*(el.price);
-        console.log(totalPrice);
+        // console.log(totalPrice);
     })
     return totalPrice; 
 
@@ -186,5 +186,7 @@ function show(){
         `
     })
     cartList.innerHTML +=`<span id="final-price">Grand Total: ${updatePrice().toPrecision(4)}</span>`;
-    cartList.innerHTML += `<span id="order-now"><a style="text-decoration:none; color:white;" href=${updateWhatsappLink()} rel="api">Order now </a></span>`;
+    cartList.innerHTML += `<span id="order-now"><a style="text-decoration:none; color:white;" href=${updateWhatsappLink()} rel="api"><br>Order now </a></span>`;
+    console.log(cartList.textContent)
 }
+
