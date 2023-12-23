@@ -205,25 +205,15 @@ div#img-text span{
     top: 8px;
 }
 
-div#footer-text{
-    position: relative;
-    left: 800px;
-    bottom: 100px;
-    text-align: right;
-}
-
-div#footer-text span{
-    position: relative;
-    bottom: 10px;
+footer {
+    display: flex;
+    justify-content: space-between;
 }
 
 footer div#img-text div#footer-img img{
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    position: relative;
-    top: 20px;
-    left: 40px;
 }
 
 #blur{
@@ -353,33 +343,11 @@ div#popup div#blur img{
         position: relative;
         right: 10px;
     }
-    
-    div#img-text, div#footer-text{
-        display: block;
-    }
 
     div#img-text{
         margin-left: 1px;
     }
     div#img-text span{
         margin-left: 20px;
-    }
-
-    footer div#img-text div#footer-img img{
-        border-radius: 50%;
-        height: 200px;
-        width: 230px;
-        position: relative;
-        top: 20px;
-    }
-    div#footer-text{
-        color: white;
-        bottom: 100px;
-        left: 1px;
-        font-size: 15px;
-        margin-right: 3px;
-    }
-    div#footer-text span{
-        font-size: 20px;
     }
 }
